@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>TO-DO LIST</title>
+    <meta name="description" content="Simple TO-DO List using HTML/CSS/js">
+    <meta name="author" content="Bibhuti Ghimire">
+    <!-- Linking reset and css style file -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Linking JS File -->
+    <script src="js/scripts.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="img/to-do-logo.png" alt="Logo">
+            <h1>My TO-DO List !!</h1>
+
+
+        </header>
+        <main>
+
+            <section>
+                <h1>To-Do App </h1>
+                <label for="todo">Enter To Do's</label>
+                <input id="todo" type="text" placeholder="To-Do's">
+
+                <input type="button" value="Add" id="addToDoBtn" class="btnSection" />
+
+                <h1>Active To-Do's </h1>
+                <ul>
+                    <li>
+                        <div>
+                            <p>Active TODO Task 1</p>
+                            <label for="assignedDatetime">Assigned Date & Time:</label>
+                        </div>
+                        <div>
+                            <input type="button" value="Delete" id="delete" class="btnSection" />
+                            <input type="button" value="Completed" id="completed" class="btnSection" />
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <p>Active TODO Task 2</p>
+                            <label for="assignedDatetime">Assigned Date & Time:</label>
+                        </div>
+                        <div>
+                            <input type="button" value="Delete" id="delete" class="btnSection" />
+                            <input type="button" value="Completed" id="completed" class="btnSection" />
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <p>Active TODO Task 3</p>
+                            <label for="assignedDatetime">Assigned Date & Time:</label>
+                        </div>
+                        <div>
+                            <input type="button" value="Delete" id="delete" class="btnSection" />
+                            <input type="button" value="Completed" id="completed" class="btnSection" />
+                        </div>
+                    </li>
+
+                </ul>
+
+                <h1>Completed To-Do's </h1>
+                <ul>
+                    <li>
+                        <div>
+                            <p>Completed Task 1</p>
+
+                            <label for="assignedDatetime">Assigned Date & Time:</label>
+                            <label for="completedDateTime">Completed Date & Time:</label>
+                        </div>
+                        <div>
+                            <input type="button" value="Delete" id="delete" class="btnSection" />
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <p>Completed Task 2</p>
+
+                            <label for="assignedDatetime">Assigned Date & Time:</label>
+                            <label for="completedDateTime">Completed Date & Time:</label>
+                        </div>
+                        <div>
+                            <input type="button" value="Delete" id="delete" class="btnSection" />
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <p>Completed Task 3</p>
+
+                            <label for="assignedDatetime">Assigned Date & Time:</label>
+                            <label for="completedDateTime">Completed Date & Time:</label>
+                        </div>
+                        <div>
+                            <input type="button" value="Delete" id="delete" class="btnSection" />
+
+                        </div>
+                    </li>
+
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>Copyright @BibhutiGhimire</p>
+        </footer>
+    </div>
+</body>
+
+</html>
