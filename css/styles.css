@@ -160,3 +160,7 @@ footer p {
     background-color: #f44336;
     color: white;
   }
+  #error-output {
+      color: red;
+      font-weight: bolder;
+  }
