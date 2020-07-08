@@ -27,6 +27,7 @@ height: 100px;
 width: 100px;
 }
 header h1 {
+    
     font-size: 50px;
     font-weight: bold;
     color: rgb(157, 207, 240);
@@ -35,7 +36,13 @@ header h1 {
     padding-top: 20px;
     
 }
+
 section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+aside {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -49,51 +56,70 @@ section input {
     margin-bottom: 15px;
     
 }
-section label {
-    font-size: 30px;
+p {
+    font-size: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #000;
     margin-bottom: 15px;
 
 }
 section h1 {
-    font-size: 50px;
-    color:black;
-    text-align: center;
-    text-shadow: cadetblue;
-    margin-bottom: 15px;
-    
-}
-.btnSection {
     background-color: rgb(190, 238, 190);
-    width: 150px;
+    text-decoration:none ;
     height: 65px;
     border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(157, 207, 240);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
 }
-section>ul {
+aside h1 {
+    background-color: rgb(190, 238, 190);
+    text-decoration:none ;
+    height: 65px;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(147, 205, 243);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+a {
+    background-color: rgb(190, 238, 190);
+    text-decoration:none ;
+    height: 65px;
+    border-radius: 10px;
+    padding: 15px;
+    border: 2px solid rgb(157, 207, 240);
+    width: 150px;
+    text-align: center;
+    
+}
+ul {
     width: 100%;
 }
 
-section>ul>li>div>p {
-    font-size: 30px;
-    margin-bottom: 15px;
-    width: 100%;
-}
-section>ul>li {
-    margin:15px 0px;
-    padding:15px 0;
+
+li {
+    margin:10px 0px;
+    padding:10px 0;
     border-bottom: 1px dotted black;
     display: flex;
     flex-direction: row;
+    font-size: 20px;
     justify-content: space-between;
 }
-section>ul>li>div>label {
-    font-size: 18px;
-   
     
-    
-}
+
 header div {
     display: flex;
     align-items: center;;
@@ -108,16 +134,29 @@ main {
     border: 2px solid rgb(157, 207, 240);
     margin-top: 15px;
     border-radius: 20px;
-    padding: 30px;
+    padding: 0px 30px 30px 30px;
     
 }
-
-
-
 footer p {
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     border-top:2px solid rgb(157, 207, 240) ;
     margin-top: 20px;
     padding-top: 10px;
 }
+.close {
+    
+    background-color: rgb(190, 238, 190);
+    text-decoration:none ;
+    height: 65px;
+    border-radius: 10px;
+    padding: 15px;
+    border: 2px solid rgb(157, 207, 240);
+    width: 150px;
+    text-align: center;
+  }
+  
+  .close:hover {
+    background-color: #f44336;
+    color: white;
+  }
