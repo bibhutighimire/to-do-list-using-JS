@@ -7,18 +7,28 @@
     const error = document.querySelector("#error-output");
     let itemArray = [];
 
-    // Create a "close" button and append it to each list item
-    var myNodelist = document.getElementsByTagName("li");
-    var i;
-    for (i = 0; i < myNodelist.length; i++) {
-        var span = document.createElement("SPAN");
-        var txt = document.createTextNode("Delete");
-        span.className = "close";
-        span.appendChild(txt);
-        myNodelist[i].appendChild(span);
-    }
+    const asidelist = document.querySelector("aside>ul");   
+    const asideitem = document.querySelector("section>ul>li");
+    let asideArray = [];
 
-    // Click on a close button to hide the current list item
+    // creating a delete and complete button on active to do list  and append it to each list item
+    var myNodelist = document.getElementsByTagName("li");
+
+    var j;
+
+    for (j = 0; j < myNodelist.length; j++) {
+        var span = document.createElement("SPAN");
+        var txt = document.createTextNode("Complete");
+        span.className = "complete";
+
+        var span1 = document.createElement("SPAN1");
+        var txt1 = document.createTextNode("Delete");
+        span1.className = "close";
+
+    }
+   
+
+    // Click on a delete button to hide the current list item
     var close = document.getElementsByClassName("close");
     var i;
     for (i = 0; i < close.length; i++) {
@@ -68,10 +78,19 @@
             input.value = "";
 
             var span = document.createElement("SPAN");
-            var txt = document.createTextNode("Delete");
-            span.className = "close";
+            var txt = document.createTextNode("Complete");
+            span.className = "complete";
+            
+            var span1 = document.createElement("SPAN1");
+            var txt1 = document.createTextNode("Delete");
+            span1.className = "close";
+
+            //this will display complete button on active to-do list
             span.appendChild(txt);
             newListItem.appendChild(span);
+//this will display delete button on active to-do list
+            span1.appendChild(txt1);
+            newListItem.appendChild(span1);
 
             for (i = 0; i < close.length; i++) {
                 close[i].onclick = function () {

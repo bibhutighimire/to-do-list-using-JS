@@ -160,6 +160,22 @@ footer p {
     background-color: #f44336;
     color: white;
   }
+  .complete {
+    
+    background-color: rgb(190, 238, 190);
+    text-decoration:none ;
+    height: 65px;
+    border-radius: 10px;
+    padding: 15px;
+    border: 2px solid rgb(157, 207, 240);
+    width: 150px;
+    text-align: center;
+  }
+  
+  .complete:hover {
+    background-color: #f44336;
+    color: white;
+  }
   #error-output {
       color: red;
       font-weight: bolder;
