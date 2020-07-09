@@ -1,9 +1,5 @@
 {
-    
-
     const list = document.querySelector("section>ul");
-    
-
     const input = document.querySelector("input");
     const a = document.querySelector("a");
     const error = document.querySelector("#error-output");
@@ -11,7 +7,7 @@
 
 
 
-    // creating a delete and complete button on active to do list  and append it to each list item
+    // creating a date, delete and complete button on active to do list  and append it to each list item
     var myNodelist = document.getElementsByTagName("li");
 
     var j;
@@ -19,16 +15,16 @@
     
 
     for (j = 0; j < myNodelist.length; j++) {
-
+        //for date
         const today=new Date();
             var span2 = document.createElement("SPAN2");
             var txt2 = document.createTextNode(today.toLocaleTimeString());
             span2.className = "date";
-
+        //for complete button
         var span = document.createElement("SPAN");
         var txt = document.createTextNode("Complete");
         span.className = "complete";
-
+        //for delete button
         var span1 = document.createElement("SPAN1");
         var txt1 = document.createTextNode("Delete");
         span1.className = "close";
@@ -145,18 +141,21 @@
                     div.style.display = "none";
                 }
             }
+            let selected=document.querySelector("aside>ul>li");
+
 
             for (i = 0; i < complete.length; i++) {
                 complete[i].onclick = function () 
                 {
                   
                     var sectionorigin = this.parentElement;
+                    
                     // sectionorigin.style.display = "none";  
                     
                     
                     let asidelistItem = document.createElement("li");
 
-                    asidelistItem.innerText = sectionorigin.value;
+                    asidelistItem.innerText = sectionorigin.children[1].remove();
                     asideArray.push(sectionorigin.value);           
                     asidelist.appendChild(sectionorigin);        
                 }
