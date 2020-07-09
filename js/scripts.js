@@ -15,8 +15,16 @@
     var myNodelist = document.getElementsByTagName("li");
 
     var j;
+    const dateElement=document.getElementsByClassName("date");
+    
 
     for (j = 0; j < myNodelist.length; j++) {
+
+        const today=new Date();
+            var span2 = document.createElement("SPAN2");
+            var txt2 = document.createTextNode(today.toLocaleTimeString());
+            span2.className = "date";
+
         var span = document.createElement("SPAN");
         var txt = document.createTextNode("Complete");
         span.className = "complete";
@@ -97,6 +105,19 @@
             list.appendChild(newListItem);
             input.value = "";
 
+            const today=new Date();
+            var span2 = document.createElement("SPAN2");
+            var txt2 = document.createTextNode(today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds() +","+today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate());
+            span2.className = "date";
+            
+
+
+        //     var span2 = document.createElement("SPAN2");
+        // const today=new Date();
+        // //dateElement.innerHTML=today.toLocaleDateString();
+        // dateElement.innerHTML = today.toString();
+        // span2.className = "date";
+
             var span = document.createElement("SPAN");
             var txt = document.createTextNode("Complete");
             span.className = "complete";
@@ -105,12 +126,17 @@
             var txt1 = document.createTextNode("Delete");
             span1.className = "close";
 
+            span2.appendChild(txt2);
+            newListItem.appendChild(span2);
+
             //this will display complete button on active to-do list
             span.appendChild(txt);
             newListItem.appendChild(span);
             //this will display delete button on active to-do list
             span1.appendChild(txt1);
             newListItem.appendChild(span1);
+
+            
 
             for (i = 0; i < close.length; i++) {
 

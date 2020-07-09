@@ -180,3 +180,7 @@ footer p {
       color: red;
       font-weight: bolder;
   }
+  .date {
+      font-size: larger;
+      color: saddlebrown;
+  }
