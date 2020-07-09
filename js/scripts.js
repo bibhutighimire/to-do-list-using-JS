@@ -1,4 +1,6 @@
 {
+    
+
     const list = document.querySelector("section>ul");
     
 
@@ -69,7 +71,8 @@
             errors = true;
         }
         if (!errors) 
-        {
+        { 
+          
             // Clear any errors from previous submissions if this one is valid.
             error.innerText = "";
 
@@ -77,6 +80,7 @@
             newListItem.innerText = input.value.trim();
 
             itemArray.push(input.value.trim().toLowerCase());
+            // Using Date() method 
 
             if (list.className === "empty")
             {
@@ -109,6 +113,7 @@
             newListItem.appendChild(span1);
 
             for (i = 0; i < close.length; i++) {
+
                 close[i].onclick = function () {
                     var div = this.parentElement;
                     div.style.display = "none";
