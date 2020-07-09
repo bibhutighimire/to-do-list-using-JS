@@ -124,15 +124,15 @@
                 complete[i].onclick = function () 
                 {
                   
-                    var div = this.parentElement;
-                    div.style.display = "none";  
+                    var sectionorigin = this.parentElement;
+                    // sectionorigin.style.display = "none";  
                     
                     
                     let asidelistItem = document.createElement("li");
 
-                    asidelistItem.innerText = this.parentElement.value;
-                    asideArray.push(this.parentElement.value);           
-                    asidelist.appendChild(asidelistItem);        
+                    asidelistItem.innerText = sectionorigin.value;
+                    asideArray.push(sectionorigin.value);           
+                    asidelist.appendChild(sectionorigin);        
                 }
             }
 
