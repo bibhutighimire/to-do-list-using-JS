@@ -164,7 +164,7 @@ console.log(selected)
             var txt4 = document.createTextNode("Edit");
             span4.className = "edit";
             span4.appendChild(txt4);
-            sectionorigin.appendChild(span3);
+            sectionorigin.appendChild(span4);
 
                     const completedtime=new Date();
                     asidelistItem.innerText =document.createTextNode(/*completedtime.getHours() + ":" + completedtime.getMinutes() + ":" + completedtime.getSeconds() +","+completedtime.getFullYear()+'-'+(completedtime.getMonth()+1)+'-'+completedtime.getDate()) +"-"+*/  sectionorigin.children[1].remove());
