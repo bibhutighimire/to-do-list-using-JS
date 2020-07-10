@@ -103,7 +103,7 @@
 
             const today=new Date();
             var span2 = document.createElement("SPAN2");
-            var txt2 = document.createTextNode(today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds() +","+today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate());
+            var txt2 = document.createTextNode("Start: "+today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds() +" , "+today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate());
             span2.className = "date";
             
 
@@ -146,23 +146,28 @@
 
             for (i = 0; i < complete.length; i++) {
                 complete[i].onclick = function () 
-                {
-                  
-                    var sectionorigin = this.parentElement;
-                    
-                    // sectionorigin.style.display = "none";  
-                    
-                    
+                {                  
+                    var sectionorigin = this.parentElement;                    
+                      
                     let asidelistItem = document.createElement("li");
+                    
+             //appending end date        
+            var span3 = document.createElement("SPAN3");
+            const today=new Date();
+            var txt3 = document.createTextNode("End: "+today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds() +" , "+today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate());
+            console.log(txt3.parentElement);
+            span3.className = "date";
+            span3.appendChild(txt3);
+            asidelist.appendChild(span3);
 
-                    asidelistItem.innerText = sectionorigin.children[1].remove();
+                    const completedtime=new Date();
+                    asidelistItem.innerText =document.createTextNode(/*completedtime.getHours() + ":" + completedtime.getMinutes() + ":" + completedtime.getSeconds() +","+completedtime.getFullYear()+'-'+(completedtime.getMonth()+1)+'-'+completedtime.getDate()) +"-"+*/  sectionorigin.children[1].remove());
+
                     asideArray.push(sectionorigin.value);           
                     asidelist.appendChild(sectionorigin);        
                 }
-            }
-
+            }        
         }
-
     });
-
+    
 }
