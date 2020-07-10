@@ -201,3 +201,19 @@ footer p {
     background-color: #f44336;
     color: white;
   }
+  .back {
+    
+    background-color: rgb(190, 238, 190);
+    text-decoration:none ;
+    height: 65px;
+    border-radius: 10px;
+    padding: 15px;
+    border: 2px solid rgb(157, 207, 240);
+    width: 150px;
+    text-align: center;
+  }
+  
+  .back:hover {
+    background-color: #f44336;
+    color: white;
+  }
