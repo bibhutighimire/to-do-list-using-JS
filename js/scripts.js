@@ -43,7 +43,7 @@
         }
     }
     const asidelist = document.querySelector("aside>ul");   
-
+    const asideulli = document.querySelector("aside>ul>li");   
     let asideArray = [];
 // Click on a complete button to hide the active to do to completed to do
     var complete = document.getElementsByClassName("complete");
@@ -143,7 +143,7 @@
             }
             let selected=document.querySelector("aside>ul>li");
 
-
+console.log(selected)
             for (i = 0; i < complete.length; i++) {
                 complete[i].onclick = function () 
                 {                  
@@ -158,7 +158,13 @@
             console.log(txt3.parentElement);
             span3.className = "date";
             span3.appendChild(txt3);
-            asidelist.appendChild(span3);
+            sectionorigin.appendChild(span3);
+
+            var span4 = document.createElement("SPAN4");
+            var txt4 = document.createTextNode("Edit");
+            span4.className = "edit";
+            span4.appendChild(txt4);
+            sectionorigin.appendChild(span3);
 
                     const completedtime=new Date();
                     asidelistItem.innerText =document.createTextNode(/*completedtime.getHours() + ":" + completedtime.getMinutes() + ":" + completedtime.getSeconds() +","+completedtime.getFullYear()+'-'+(completedtime.getMonth()+1)+'-'+completedtime.getDate()) +"-"+*/  sectionorigin.children[1].remove());
